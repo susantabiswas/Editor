@@ -1,0 +1,1 @@
+This is a simple multi-tab Editor with basic features.
