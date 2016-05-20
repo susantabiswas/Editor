@@ -119,7 +119,7 @@ namespace TabbedEditor
             catch (Exception ex)
             {
 
-                MessageBox.Show("No Currently Ope Tabs");
+                MessageBox.Show("No Currently Open Tabs");
             }
         }
 
