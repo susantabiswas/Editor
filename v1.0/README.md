@@ -1,1 +1,1 @@
-This is a simple multi-tab Editor with basic features.
+This is a basic Widnows Form Application multi-tab Editor with basic features written in C#.
