@@ -1,1 +1,1 @@
-This is a basic Widnows Form Application multi-tab Editor with basic features written in C#.
+This is a basic Windows Form Application multi-tab Editor with basic features written in C#.
