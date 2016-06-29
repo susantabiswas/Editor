@@ -31,18 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.closetabb = new System.Windows.Forms.ToolStripButton();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.search_txt = new System.Windows.Forms.ToolStripTextBox();
-            this.searchb = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +45,11 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoClearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.closetabb = new System.Windows.Forms.ToolStripButton();
+            this.search_txt = new System.Windows.Forms.ToolStripTextBox();
+            this.searchb = new System.Windows.Forms.ToolStripButton();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -75,23 +75,6 @@
             this.newToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.newToolStripMenuItem.Text = "File";
             // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.selectAllToolStripMenuItem,
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.clearToolStripMenuItem,
-            this.undoClearToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
-            // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
@@ -113,6 +96,23 @@
             this.saveToolStripMenuItem1.Text = "Save";
             this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cutToolStripMenuItem,
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.selectAllToolStripMenuItem,
+            this.undoToolStripMenuItem,
+            this.redoToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.clearToolStripMenuItem,
+            this.undoClearToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
@@ -133,54 +133,6 @@
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.closetabb,
-            this.search_txt,
-            this.searchb});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(449, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // closetabb
-            // 
-            this.closetabb.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.closetabb.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.closetabb.Image = ((System.Drawing.Image)(resources.GetObject("closetabb.Image")));
-            this.closetabb.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.closetabb.Name = "closetabb";
-            this.closetabb.Size = new System.Drawing.Size(62, 22);
-            this.closetabb.Text = "Close Tab";
-            this.closetabb.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 49);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(449, 343);
-            this.tabControl1.TabIndex = 3;
-            // 
-            // search_txt
-            // 
-            this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(100, 25);
-            // 
-            // searchb
-            // 
-            this.searchb.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.searchb.Image = ((System.Drawing.Image)(resources.GetObject("searchb.Image")));
-            this.searchb.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.searchb.Name = "searchb";
-            this.searchb.Size = new System.Drawing.Size(46, 22);
-            this.searchb.Text = "Search";
-            this.searchb.Click += new System.EventHandler(this.searchb_Click);
             // 
             // toolStripSeparator1
             // 
@@ -227,6 +179,54 @@
             this.undoClearToolStripMenuItem.Text = "Undo Clear";
             this.undoClearToolStripMenuItem.Click += new System.EventHandler(this.undoClearToolStripMenuItem_Click);
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.closetabb,
+            this.search_txt,
+            this.searchb});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(449, 25);
+            this.toolStrip1.TabIndex = 2;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // closetabb
+            // 
+            this.closetabb.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.closetabb.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.closetabb.Image = ((System.Drawing.Image)(resources.GetObject("closetabb.Image")));
+            this.closetabb.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.closetabb.Name = "closetabb";
+            this.closetabb.Size = new System.Drawing.Size(62, 22);
+            this.closetabb.Text = "Close Tab";
+            this.closetabb.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // search_txt
+            // 
+            this.search_txt.Name = "search_txt";
+            this.search_txt.Size = new System.Drawing.Size(100, 25);
+            // 
+            // searchb
+            // 
+            this.searchb.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.searchb.Image = ((System.Drawing.Image)(resources.GetObject("searchb.Image")));
+            this.searchb.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.searchb.Name = "searchb";
+            this.searchb.Size = new System.Drawing.Size(46, 22);
+            this.searchb.Text = "Search";
+            this.searchb.Click += new System.EventHandler(this.searchb_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 49);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(449, 343);
+            this.tabControl1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,6 +238,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Editor";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
